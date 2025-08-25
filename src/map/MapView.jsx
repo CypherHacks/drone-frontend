@@ -50,7 +50,7 @@ export default function MapView(){
     mapRef.current = map
 
     map.on('load', async () => {
-      await addSvgAsImage(map, '/icons/drone.svg?url', 'drone-icon', 64)
+      await addSvgAsImage(map, '../assets/drone.svg?url', 'drone-icon', 64)
 
       map.addSource('drones', { type:'geojson', data: getPointsFC() })
       map.addSource('paths',  { type:'geojson', data: getLinesFC() })

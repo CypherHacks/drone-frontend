@@ -8,9 +8,9 @@ export default function HeaderBar(){
         <div className="name">SAGER</div>
       </div>
       <div className="top-actions">
-        <button className="icon-btn" title="Notifications"><img src="/icons/bell.svg?url" alt="bell"/></button>
-        <button className="icon-btn" title="Snapshot"><img src="/icons/camera.svg?url" alt="camera"/></button>
-        <button className="icon-btn" title="Language"><img src="/icons/language.svg?url" alt="lang"/></button>
+        <button className="icon-btn" title="Notifications"><img src="../assets/bell.svg?url" alt="bell"/></button>
+        <button className="icon-btn" title="Snapshot"><img src="../assets/camera.svg?url" alt="camera"/></button>
+        <button className="icon-btn" title="Language"><img src="../assets/language.svg?url" alt="lang"/></button>
         <div className="sep"></div>
         <div className="user">
           <div className="hi">Hello, <strong>Fadi Baqain</strong></div>
