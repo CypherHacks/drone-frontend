@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react'
 import mapboxgl from 'mapbox-gl'
 import { useDroneStore, formatFlightTime } from '../state/droneStore.js'
 import { addSvgAsImage } from '../utils/mapImages.js'
+import droneIcon from '../assets/drone.svg?url'
 
 mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_TOKEN || ''
 
@@ -50,7 +51,7 @@ export default function MapView(){
     mapRef.current = map
 
     map.on('load', async () => {
-      await addSvgAsImage(map, '../assets/drone.svg?url', 'drone-icon', 64)
+          await addSvgAsImage(map, droneIcon, 'drone-icon', 64)
 
       map.addSource('drones', { type:'geojson', data: getPointsFC() })
       map.addSource('paths',  { type:'geojson', data: getLinesFC() })

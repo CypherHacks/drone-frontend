@@ -1,5 +1,10 @@
 import React from 'react'
 
+// ✅ Import icons with ?url so Vite rewrites the paths correctly for GitHub Pages
+import bellIcon from '../assets/bell.svg?url'
+import cameraIcon from '../assets/capture-svgrepo-com.svg?url'
+import langIcon from '../assets/language-svgrepo-com.svg?url'
+
 export default function HeaderBar(){
   return (
     <header className="appbar">
@@ -8,9 +13,15 @@ export default function HeaderBar(){
         <div className="name">SAGER</div>
       </div>
       <div className="top-actions">
-        <button className="icon-btn" title="Notifications"><img src="../assets/bell.svg?url" alt="bell"/></button>
-        <button className="icon-btn" title="Snapshot"><img src="../assets/camera.svg?url" alt="camera"/></button>
-        <button className="icon-btn" title="Language"><img src="../assets/language.svg?url" alt="lang"/></button>
+        <button className="icon-btn" title="Notifications">
+          <img src={bellIcon} alt="bell"/>
+        </button>
+        <button className="icon-btn" title="Snapshot">
+          <img src={cameraIcon} alt="camera"/>
+        </button>
+        <button className="icon-btn" title="Language">
+          <img src={langIcon} alt="lang"/>
+        </button>
         <div className="sep"></div>
         <div className="user">
           <div className="hi">Hello, <strong>Fadi Baqain</strong></div>
