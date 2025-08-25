@@ -19,8 +19,8 @@ export default function FixedSidebar(){
 
   return (
     <>
-      <Item id="dashboard" icon="/icons/dashboard.svg" label="Dashboard" />
-      <Item id="map" icon="/icons/map.svg" label="Map" />
+      <Item id="dashboard" icon="/icons/dashboard.svg?url" label="Dashboard" />
+      <Item id="map" icon="/icons/map.svg?url" label="Map" />
     </>
   )
 }
